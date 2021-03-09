@@ -106,9 +106,9 @@ Start the necessary services, docker and kubelet:
 
 `systemctl start docker && systemctl enable docker
 `
-
 `systemctl start kubelet && systemctl enable kubelet
 `
+
 Kubernetes and Docker need to use the same cgroup. Make sure first that Docker is using *cgroupfs* as cgroup-driver:
 
 `docker info | grep -i cgroup
