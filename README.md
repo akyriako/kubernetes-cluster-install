@@ -106,6 +106,7 @@ Start the necessary services, docker and kubelet:
 
 `systemctl start docker && systemctl enable docker
 `
+
 `systemctl start kubelet && systemctl enable kubelet
 `
 
@@ -169,6 +170,7 @@ Wait for it to finish, it will take some time so either be patient or take a sma
 
 `kubectl get nodes
 `
+
 `kubectl get pods --all-namespaces
 `
 
@@ -188,10 +190,11 @@ and run it in every box that will host a worker node. If you are interested havi
 > [!TIP]
 > You can run it as many times as you want in case of failure without needing to clean up something before you execute it again.
 
-Wait for it to finish, it will take some time so either be patient or take a small break. You can periodically check the status of the cluster and the pods, from your master, with the following commands:
+Wait for it to finish, it will take some time so either be patient or take a small break. You can periodically check the status of the cluster and the pods, **from your master**, with the following commands:
 
 `kubectl get nodes
 `
+
 `kubectl get pods --all-namespaces
 `
 
