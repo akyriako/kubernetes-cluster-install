@@ -99,9 +99,6 @@ Wait the installation to finish and then reboot the machine:
 
 `shutdown -r now`
 
-> [!IMPORTANT]
-> There is something going on with virtualized CentOS 8 instances, and after rebooting enp0s3 is not coming up right away. Don't take any actions, wait for it and it will come up eventually after some minutes. Surely not optimal especially for production workloads, but unfortunately I haven't figured out a solution yet, so stick with waiting.
-
 Start the necessary services, docker and kubelet:
 
 `systemctl start docker && systemctl enable docker
